@@ -20,16 +20,14 @@ import { bindActionCreators } from 'redux';
     <div>
      {this.renderFrom()}
      <div>
-     <TodoList 
-         store={this.props.store}>
-      </TodoList>
+   
      </div>
      </div>
     )
   }
 
 componentWillMount(){
-    this.renderFrom=this.renderFrom.bind(this)
+   // this.renderFrom=this.renderFrom.bind(this)
 }
 onSubmit(e){
   e.preventDefault()
@@ -39,26 +37,20 @@ onChange(e){
     title:e.target.value
   })
 }
-
   renderFrom(){
-    console.log('----')
-    console.log(this.props.todo)
     return(
-      <div>
-        <div>
-            <h1>Add Todo</h1>
+        <div className="row">
+        <div id="dodaj">
             <form onSubmit={this.onSubmit}>
                 <input
                  type='text'
-                 name="title"
                  value={this.state.title}
                  onChange={this.onChange}
                 ></input>
-                <br />
-                <button onClick={()=>this.props.addTodoItem([...this.props.todo,{task:this.state.title}])} type="submit">Add</button>
+                <button  className="btn btn-primary btn-sm" onClick={()=>this.props.addTodoItem({task:this.state.title})} type="submit">Add</button>
             </form>
         </div>
-      </div>
+        </div>
     )
   }
 }

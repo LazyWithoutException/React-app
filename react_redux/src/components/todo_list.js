@@ -7,8 +7,11 @@ class TodoList extends Component {
 
   render() {
     return (
-      <div>    
+      <div>
+      <div >  
+        
           {this.listTask()}
+      </div>
       </div>
     )
   }
@@ -18,10 +21,13 @@ class TodoList extends Component {
   }
   listTask(){
     return( this.props.tasks.map((task,index)=>{
-      return(    
+      return( 
+           
       <TodoItem
         key={index}
         task={task.task}
+        store={this.props.store}
+        checked={task.checked}
       >
       </TodoItem>)
     }))

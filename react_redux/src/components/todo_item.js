@@ -1,25 +1,43 @@
 import React,{Component} from "react"
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux';
-import {strikeItem, addTodoItem} from '../store/actions/index'
+import {strikeItem, addTodoItem,deleteTodoItem} from '../store/actions/index'
 
 class TodoItem extends Component{
+  
     render(){
         return( 
-            <div>
-            <p>{this.props.task}</p>
-            <button onClick={()=>this.props.addTodoItem()}>Delete</button>
-            <button onClick={() => this.props.strikeItem()} >Done</button>
-            <button>X</button>
-            </div>
+            <div className="card">
+                <div className="row">
+                <div className="card-body">
+                   <p >{this.checkParagraphStrike(this.props.checked)}</p>
+                </div>
+                <div id="dugmici" >
+                <div className="card-body" >
+            <button type="button" className="btn btn-primary btn-sm"onClick={() => this.props.strikeItem(this.props.task)} >Done</button>
+            <button type="button" className="btn btn-primary btn-sm" onClick={() => this.props.deleteTodoItem(this.props.task)}>x</button>
+                </div>
+                </div>
+                </div>
+            </div>        
     )}
+    checkParagraphStrike(val){
+        if(val)
+        return(
+            <strike><p>{this.props.task}</p></strike>
+        )
+        else
+        return(
+            <p>{this.props.task}</p>
+        )
+    }
 }
+
 const mapStateToProps =(state) => ({
-    //todo: state.activeToDo,
-   // addtodo:state.todo
+    todo: state.addTodo,
   });
 
   function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ strikeItem,addTodoItem }, dispatch);
+    return bindActionCreators({ strikeItem,addTodoItem,deleteTodoItem }, dispatch);
   }
 export default connect(mapStateToProps,mapDispatchToProps)(TodoItem)
