@@ -28,14 +28,14 @@ export default class TimePicker extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div id="datepicker">
                 <DatePickerInput
                     onChange={this.onChange}
                     value={this.state.selectedDate}
                     className='my-custom-datepicker-component'
                 />
                 <DatePicker onChange={this.onChange} value={this.state.selectedDate} />
-                <button type="button" className="btn btn-primary btn-sm"onClick={this.onClick}>Go</button>
+                <button type="button" className="btn btn-primary btn-lg btn-block"onClick={this.onClick}>Go</button>
 
             </div>
         );

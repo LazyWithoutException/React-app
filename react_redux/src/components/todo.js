@@ -13,11 +13,11 @@ export default class Todo extends Component {
       </NavBar>
       <div id="todo">
           <div className="row">
-              <div className="col">
+              <div className="col-3">
                  <TimePicker>
                  </TimePicker>
               </div>
-              <div className="col">
+              <div className="col-8">
                    <AddTodoItems
                         >
                    </AddTodoItems>
