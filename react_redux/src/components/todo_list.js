@@ -21,10 +21,9 @@ class TodoList extends Component {
   }
   listTask(){
     return( this.props.tasks.map((task,index)=>{
-      return( 
-           
+      return(   
       <TodoItem
-        key={index}
+        id={task.id}
         task={task.task}
         store={this.props.store}
         checked={task.checked}
@@ -36,7 +35,7 @@ class TodoList extends Component {
 }
 
 const mapStateToProps =(state) => ({
-  tasks: state.addTodo
+  tasks: state.taskReducerTodo
 });
 export default connect(mapStateToProps)(TodoList)
 

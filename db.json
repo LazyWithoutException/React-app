@@ -1,19 +1,61 @@
 {
-  "posts": [
+  "users": [],
+  "data": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id": "jhxb6c5g",
+      "task": "treci",
+      "checked": false,
+      "kljuc": "iz sesije",
+      "date": "6/3/2018"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": "jhxb6jgy",
+      "task": "cetrvrti",
+      "checked": false,
+      "kljuc": "iz sesije",
+      "date": "6/4/2018"
+    },
+    {
+      "id": "jhxb6qd1",
+      "task": "peti",
+      "checked": false,
+      "kljuc": "iz sesije",
+      "date": "6/5/2018"
+    },
+    {
+      "id": "jhxb8swp",
+      "task": " sesti",
+      "checked": true,
+      "kljuc": "iz sesije",
+      "date": "6/6/2018"
+    },
+    {
+      "id": "jhxbgajb",
+      "task": " sedmi",
+      "checked": true,
+      "kljuc": "iz sesije",
+      "date": "6/7/2018"
+    },
+    {
+      "id": "jhxda7lh",
+      "task": " ",
+      "checked": false,
+      "kljuc": "iz sesije",
+      "date": "6/2/2018"
+    },
+    {
+      "id": "jhxdaq01",
+      "task": "csahvhisovh",
+      "checked": false,
+      "kljuc": "iz sesije",
+      "date": "6/2/2018"
+    },
+    {
+      "id": "jhxdb1zn",
+      "task": "ipak se nisam zeznuka",
+      "checked": true,
+      "kljuc": "iz sesije",
+      "date": "6/2/2018"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

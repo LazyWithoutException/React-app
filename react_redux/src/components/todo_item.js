@@ -10,12 +10,16 @@ class TodoItem extends Component{
             <div className="card">
                 <div className="row">
                 <div className="card-body">
-                   <p >{this.checkParagraphStrike(this.props.checked)}</p>
+                   {this.checkParagraphStrike(this.props.checked)}
                 </div>
                 <div id="dugmici" >
                 <div className="card-body" >
-            <button type="button" className="btn btn-primary btn-sm"onClick={() => this.props.strikeItem(this.props.task)} >Done</button>
-            <button type="button" className="btn btn-primary btn-sm" onClick={() => this.props.deleteTodoItem(this.props.task)}>x</button>
+            <button  type="button" className="btn btn-primary btn-sm"onClick={() => this.props.strikeItem(
+                {id:this.props.id ,name:this.props.task,date:this.props.store.getState().tempDate.date,checked:true,kljuc:"iz sesije"})}
+                >Done</button>
+            <button type="button" className="btn btn-primary btn-sm" onClick={() => this.props.deleteTodoItem(
+                 {id:this.props.id})}
+                 >x</button>
                 </div>
                 </div>
                 </div>
@@ -34,7 +38,7 @@ class TodoItem extends Component{
 }
 
 const mapStateToProps =(state) => ({
-    todo: state.addTodo,
+    todo: state.taskReducerTodo,
   });
 
   function mapDispatchToProps(dispatch) {

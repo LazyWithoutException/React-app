@@ -3,6 +3,7 @@ import {connect} from "react-redux"
 import TodoList from './todo_list'
 import {addTodoItem} from '../store/actions/index'
 import { bindActionCreators } from 'redux';
+var uniqid = require('uniqid');
 
 
  class AddTodoItems extends Component {
@@ -11,23 +12,19 @@ import { bindActionCreators } from 'redux';
      this.state={
        title:' '
      }
-     
-    this.onChange = this.onChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
    }
   render() {
     return (
     <div>
      {this.renderFrom()}
-     <div>
-   
-     </div>
      </div>
     )
   }
 
 componentWillMount(){
-   // this.renderFrom=this.renderFrom.bind(this)
+  this.onChange = this.onChange.bind(this);
+  this.onSubmit = this.onSubmit.bind(this);
+  this.onClick=this.onClick.bind(this);
 }
 onSubmit(e){
   e.preventDefault()
@@ -36,6 +33,20 @@ onChange(e){
   this.setState({
     title:e.target.value
   })
+}
+onClick(){
+console.log(uniqid())
+//onClick={()=>this.props.addTodoItem({task:this.state.title})}
+this.props.addTodoItem({
+  id:uniqid(),
+  task:this.state.title,
+  date:this.props.store.getState().tempDate.date,
+  checked:false,
+  kljuc:"iz sesije"
+})
+this.setState({
+  title:""
+})
 }
   renderFrom(){
     return(
@@ -47,7 +58,7 @@ onChange(e){
                  value={this.state.title}
                  onChange={this.onChange}
                 ></input>
-                <button  className="btn btn-primary btn-sm" onClick={()=>this.props.addTodoItem({task:this.state.title})} type="submit">Add</button>
+               <button onClick={this.onClick} className="btn btn-primary btn-sm"  type="submit">Add</button>
             </form>
         </div>
         </div>
@@ -55,7 +66,7 @@ onChange(e){
   }
 }
 const mapStateToProps =(state) => ({
-todo:state.addTodo
+todo:state.taskReducerTodo
 });
 
 function mapDispatchToProps(dispatch) {

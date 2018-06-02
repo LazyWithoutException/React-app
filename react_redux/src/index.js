@@ -5,13 +5,16 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 ///////////
-import { createStore } from 'redux';
+import { createStore,applyMiddleware } from 'redux';
 import reducer from './store/reducers';
 import { addToDo } from './store/actions';
+import createSagaMiddleware from 'redux-saga'
+import mySaga from './sagas/sagas'
 
- const store = createStore(reducer);
-console.log(store.getState())
-console.log("izglavni index.js");
+const sagaMiddleware=createSagaMiddleware();
+const store = createStore(reducer,applyMiddleware(sagaMiddleware));
+sagaMiddleware.run(mySaga)
+
 ReactDOM.render((
   <Provider store={store}>
     <App store={store}/>
