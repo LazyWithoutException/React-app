@@ -2,20 +2,6 @@
   "users": [],
   "data": [
     {
-      "id": "jhxb6c5g",
-      "task": "treci",
-      "checked": false,
-      "kljuc": "iz sesije",
-      "date": "6/3/2018"
-    },
-    {
-      "id": "jhxb6jgy",
-      "task": "cetrvrti",
-      "checked": false,
-      "kljuc": "iz sesije",
-      "date": "6/4/2018"
-    },
-    {
       "id": "jhxb6qd1",
       "task": "peti",
       "checked": false,
@@ -37,25 +23,60 @@
       "date": "6/7/2018"
     },
     {
-      "id": "jhxda7lh",
-      "task": " ",
+      "id": "jhxdrdza",
+      "task": " task 1",
       "checked": false,
       "kljuc": "iz sesije",
       "date": "6/2/2018"
     },
     {
-      "id": "jhxdaq01",
-      "task": "csahvhisovh",
-      "checked": false,
-      "kljuc": "iz sesije",
-      "date": "6/2/2018"
-    },
-    {
-      "id": "jhxdb1zn",
-      "task": "ipak se nisam zeznuka",
+      "id": "jhxdrijz",
+      "task": "task 3",
       "checked": true,
       "kljuc": "iz sesije",
       "date": "6/2/2018"
+    },
+    {
+      "id": "jhxdrnn8",
+      "task": "task2",
+      "checked": false,
+      "kljuc": "iz sesije",
+      "date": "6/2/2018"
+    },
+    {
+      "id": "jhxdrvpo",
+      "task": "task 1",
+      "checked": false,
+      "kljuc": "iz sesije",
+      "date": "6/3/2018"
+    },
+    {
+      "id": "jhxdrz21",
+      "task": "task 2",
+      "checked": false,
+      "kljuc": "iz sesije",
+      "date": "6/3/2018"
+    },
+    {
+      "id": "jhxds12x",
+      "task": "task 3",
+      "checked": false,
+      "kljuc": "iz sesije",
+      "date": "6/3/2018"
+    },
+    {
+      "id": "jhxdso0z",
+      "task": "task1",
+      "checked": false,
+      "kljuc": "iz sesije",
+      "date": "6/4/2018"
+    },
+    {
+      "id": "jhxdsraz",
+      "task": "task 2",
+      "checked": true,
+      "kljuc": "iz sesije",
+      "date": "6/4/2018"
     }
   ]
 }
