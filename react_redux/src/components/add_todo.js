@@ -50,18 +50,18 @@ this.setState({
 }
   renderFrom(){
     return(
-        <div className="row">
-        <div id="dodaj">
+
             <form onSubmit={this.onSubmit}>
-                <input
-                 type='text'
+            <div class="form-group">
+                <input 
+                 type="text"
                  value={this.state.title}
                  onChange={this.onChange}
                 ></input>
-               <button onClick={this.onClick} className="btn btn-primary btn-sm"  type="submit">Add</button>
+               <button onClick={this.onClick}  className="btn btn-primary"  type="submit">Add</button>
+               </div>
             </form>
-        </div>
-        </div>
+        
     )
   }
 }

@@ -10,7 +10,6 @@ import reducer from './store/reducers';
 import { addToDo } from './store/actions';
 import createSagaMiddleware from 'redux-saga'
 import mySaga from './sagas/sagas'
-
 const sagaMiddleware=createSagaMiddleware();
 const store = createStore(reducer,applyMiddleware(sagaMiddleware));
 sagaMiddleware.run(mySaga)
