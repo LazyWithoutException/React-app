@@ -20,6 +20,7 @@ class TodoList extends Component {
     this.listTask=this.listTask.bind(this);
   }
   listTask(){
+    console.log("-------list taks--------")
     return( this.props.tasks.map((task,index)=>{
       return(   
       <TodoItem

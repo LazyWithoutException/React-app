@@ -52,7 +52,7 @@ this.setState({
     return(
 
             <form onSubmit={this.onSubmit}>
-            <div class="form-group">
+            <div className="form-group">
                 <input 
                  type="text"
                  value={this.state.title}

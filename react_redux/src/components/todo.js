@@ -30,8 +30,7 @@ export default class Todo extends Component {
                  </div>
               </div>
               <div className="col-md">
-                   <AddTodoItems
-                   
+                   <AddTodoItems  
                    store={this.props.store}
                    >
                    </AddTodoItems>

@@ -43,14 +43,13 @@ import 'rc-datepicker/lib/style.css';
                     value={this.state.selectedDate}
                     className='my-custom-datepicker-component'
                 />
-                <DatePicker onClick={this.onClick}  onChange={this.onChange} value={this.state.selectedDate} />
+                <DatePicker  onChange={this.onChange} value={this.state.selectedDate} />
                 <button type="button" className="btn btn-primary btn-lg btn-block" onClick={this.onClick}>Pick Date And Go</button>
 
             </div>
         );
     }
 }
-
 const mapStateToProps =(state) => ({
     dateReducer: state.tempDate.date
   });

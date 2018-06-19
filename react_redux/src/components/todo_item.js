@@ -4,8 +4,10 @@ import { bindActionCreators } from 'redux';
 import {strikeItem, addTodoItem,deleteTodoItem} from '../store/actions/index'
 
 class TodoItem extends Component{
-  
     render(){
+        console.log("................")
+        console.log(this.props.store.getState());
+        console.log(this.props)
         return( 
             <div className="card">
                 <div className="row">

@@ -3,73 +3,73 @@
   "data": [
     {
       "id": "jhxb6qd1",
-      "task": "peti",
-      "checked": false,
+      "task": "Nauci Redux",
+      "checked": true,
       "kljuc": "iz sesije",
-      "date": "6/5/2018"
+      "date": "6/18/2018"
     },
     {
       "id": "jhxb8swp",
-      "task": " sesti",
+      "task": " Nauci React",
       "checked": true,
       "kljuc": "iz sesije",
-      "date": "6/6/2018"
+      "date": "6/18/2018"
     },
     {
       "id": "jhxbgajb",
-      "task": " sedmi",
+      "task": " Nuauci Angular",
       "checked": true,
       "kljuc": "iz sesije",
-      "date": "6/7/2018"
+      "date": "6/18/2018"
     },
     {
       "id": "jhxdrdza",
       "task": " task 1",
       "checked": false,
       "kljuc": "iz sesije",
-      "date": "6/2/2018"
+      "date": "6/19/2018"
     },
     {
       "id": "jhxdrijz",
       "task": "task 3",
       "checked": true,
       "kljuc": "iz sesije",
-      "date": "6/2/2018"
+      "date": "6/19/2018"
     },
     {
       "id": "jhxdrnn8",
       "task": "task2",
-      "checked": false,
+      "checked": true,
       "kljuc": "iz sesije",
-      "date": "6/2/2018"
+      "date": "6/19/2018"
     },
     {
       "id": "jhxdrvpo",
       "task": "task 1",
       "checked": false,
       "kljuc": "iz sesije",
-      "date": "6/3/2018"
+      "date": "6/19/2018"
     },
     {
       "id": "jhxdrz21",
       "task": "task 2",
       "checked": false,
       "kljuc": "iz sesije",
-      "date": "6/3/2018"
+      "date": "6/20/2018"
     },
     {
       "id": "jhxds12x",
       "task": "task 3",
       "checked": false,
       "kljuc": "iz sesije",
-      "date": "6/3/2018"
+      "date": "6/20/2018"
     },
     {
       "id": "jhxdso0z",
       "task": "task1",
       "checked": false,
       "kljuc": "iz sesije",
-      "date": "6/4/2018"
+      "date": "6/20/2018"
     },
     {
       "id": "jhxdsraz",
@@ -79,11 +79,25 @@
       "date": "6/4/2018"
     },
     {
-      "id": "jhxhfbt3",
-      "task": " das",
+      "id": "ji1ou0ia",
+      "task": "imam lab vezbu",
+      "checked": true,
+      "kljuc": "iz sesije",
+      "date": "6/5/2018"
+    },
+    {
+      "id": "jil9l41m",
+      "task": " nauci react",
+      "checked": true,
+      "kljuc": "iz sesije",
+      "date": "6/6/2018"
+    },
+    {
+      "id": "jil9tkod",
+      "task": " Spremi usmeni",
       "checked": false,
       "kljuc": "iz sesije",
-      "date": "6/2/2018"
+      "date": "6/19/2018"
     }
   ]
 }
